@@ -1,0 +1,73 @@
+.precios{
+    background: #f2f2f2;
+}
+
+.precios h3{
+    padding-top: 80px;
+}
+
+.precios-tablas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tabla{
+    background: var(--backtabla);
+    width: 29%;
+    text-align: center;
+    border-radius: 4px;
+    padding: 40px 0;
+    box-shadow:var(--box-shadow);
+    color: var(--color);
+    transform: scale(1);
+    transition: transform 1s;
+}
+
+.tabla h5{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.tabla .price{
+    color: var(--color-precio);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.tabla .price span{
+    font-size: 24px;
+}
+
+.tabla ul li{
+    display: block;
+    list-style: none;
+    border-bottom: var(--border);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    color:var(--color);
+}
+
+.tabla>a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--color-boton);
+    background: var(--back);
+    width: 140px;
+    border-radius: 10px;
+    padding:10px 0;
+    box-shadow: var(--box-shadow);
+}
+
+.tabla:hover{
+    --border: 1px dotted #fff;
+    cursor: pointer;
+    --back: #fff;
+    --color: #fff;
+    --color-boton: #000;
+    --backtabla : rgba(75, 0, 224, 0.698);
+    --color-precio: #fff;
+    transform: scale(1.07);
+}

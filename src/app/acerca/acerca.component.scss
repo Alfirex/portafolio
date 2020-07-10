@@ -1,0 +1,58 @@
+.acerca-de{
+    padding-top:40px;
+}
+
+.contenedor-acerca-de{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width:800px){
+        justify-content: center;
+        align-items: center;    
+   }
+   
+
+    .card-acerca{
+        background: #f2f2f2;
+        width: 30%;
+        border-radius: 3px;
+        padding: 20px 10px;
+        margin-top: 40px;
+    
+        @media screen and (max-width:800px){
+
+            width: 70%;
+           
+       }
+       
+        p{
+            font-weight: 300;
+            margin-bottom: 10px;
+            color: #585858;
+        }
+        i{
+            display: block;
+            font-size: 100px;
+            color:rgba(75, 0, 224, 0.698);
+            margin-bottom: 15px;
+        }
+        h4{
+            margin-bottom: 10px;
+        }
+    }
+    
+}
+
+
+@media screen and (max-width:800px){
+     .contenedor-acerca-de{
+        justify-content: center;
+        align-items: center;
+    }
+    .card-acerca{
+        width: 70%;
+    }
+}
+

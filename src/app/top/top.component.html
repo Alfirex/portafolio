@@ -1,0 +1,31 @@
+<header>
+  <nav>
+      <div class="menu-header"  (click)="clickEvent()"  
+      >
+          <img src="imagenes/icono.png" alt=""> asda
+      </div>
+      <div class="enlaces-header" id="enlaces" [ngClass]="status ? 'extra-clase' : ''">
+        <a [routerLink]="['/']" (click)="clickEvent()">Inicio</a>
+        <a [routerLink]="['/contacto']" (click)="clickEvent()">Contacto</a>
+
+      </div>
+  </nav>
+  <div class="contenido-header">
+      <div class="textos-header"> 
+          <h1>Portafoliooo</h1>
+          <h2>Afriiiii</h2>
+          <a href="#">Ver más</a>
+      </div>
+      <div class="img-header">
+          <img src="imagenes/ilustracion1.svg" alt="">
+      </div>
+  </div>
+
+  <div class="wave-bottom" style="height: 150px; overflow: hidden;" >
+    <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+        <path d="M0.00,49.98 C150.39,136.47 332.11,-25.37 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #fff;"></path>
+    </svg>
+</div>
+</header>
+
+
